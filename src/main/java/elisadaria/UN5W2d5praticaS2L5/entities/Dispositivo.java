@@ -15,10 +15,8 @@ public class Dispositivo {
     @GeneratedValue
     @Setter(AccessLevel.NONE)
     private long id;
-    @Enumerated(EnumType.STRING)
-    private typeOfDispositvo type_of_dispositvo;
-    @Enumerated(EnumType.STRING)
-    private typeOfAvailability type_of_availability;
+    private String type_of_dispositvo;
+    private String type_of_availability;
     @ManyToOne
     @JoinColumn(name="dipendente_id")
     private Dipendente dipendente;
