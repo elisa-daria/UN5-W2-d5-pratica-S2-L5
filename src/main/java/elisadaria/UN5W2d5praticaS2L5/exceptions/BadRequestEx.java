@@ -1,9 +1,10 @@
 package elisadaria.UN5W2d5praticaS2L5.exceptions;
 
+import lombok.Getter;
 import org.springframework.validation.ObjectError;
 
 import java.util.List;
-
+@Getter
 public class BadRequestEx extends RuntimeException{
     private List<ObjectError>errors;
     public BadRequestEx(String message) {
